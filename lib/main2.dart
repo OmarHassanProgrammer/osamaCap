@@ -1,12 +1,12 @@
 // Copyright 2017, Paul DeMarco.
 // All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
-
+/*
 import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_blue/flutter_blue.dart';
+/import 'package:flutter_blue/flutter_blue.dart';
 import 'package:os/widgets.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 
@@ -163,10 +163,7 @@ class DeviceScreen extends StatelessWidget {
       // Iterate through the services to find the characteristic you want to write to
       services.forEach((service) {
         service.characteristics.forEach((characteristic) {
-          // Replace with the UUID of the characteristic you want to write to
-          if (characteristic.uuid.toString() == "0000fff1-0000-1040-8000-00805f9b34fb") {
-            characteristic!.write("connected".codeUnits, withoutResponse: true);
-          }
+          characteristic!.write("connected".codeUnits, withoutResponse: true);
         });
       });
     }
@@ -266,4 +263,4 @@ class DeviceScreen extends StatelessWidget {
       ),
     );
   }
-}
+}*/
